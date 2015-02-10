@@ -125,7 +125,35 @@
                                                     </select>
                     </td>
                  </tr>
-
+                <tr>
+                    <td style="width:80px;">类型：</td>
+                    <td colspan="2">
+                        <div class="group_radio">
+							<?php  $isordertype=1?>
+							<?php  if($set['ordretype2']==1) { ?>
+							<span >
+                                <input type="radio" name="order_type" value="2" <?php  if($isordertype==1) { ?>checked="checked"<?php  } ?> />
+                                <label>店内</label>
+                            </span>
+							<?php  $isordertype=0?>
+							<?php  } ?>
+							<?php  if($set['ordretype1']==1) { ?>
+							<span>
+                                <input type="radio" name="order_type" value="1" <?php  if($isordertype==1) { ?>checked="checked"<?php  } ?> />
+                                <label>外卖</label>
+                            </span>
+							<?php  $isordertype=0?>
+							<?php  } ?>
+							<?php  if($set['ordretype3']==1) { ?>
+							<span>
+                                <input type="radio" name="order_type" value="3" <?php  if($isordertype==1) { ?>checked="checked"<?php  } ?> />
+                                <label>自提</label>
+                            </span>
+							<?php  $isordertype=0?>
+							<?php  } ?>
+                    </div>
+                    </td>
+                </tr>
 				<tbody id="out" style="display:none">
 				<?php  if(empty($set['address_list'])) { ?>
 				<tr>
