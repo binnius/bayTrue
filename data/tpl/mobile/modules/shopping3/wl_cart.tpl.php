@@ -125,6 +125,7 @@
                                                     </select>
                     </td>
                  </tr>
+                <!--
                 <tr>
                     <td style="width:80px;">类型：</td>
                     <td colspan="2">
@@ -153,7 +154,8 @@
 							<?php  } ?>
                     </div>
                     </td>
-                </tr>	
+                </tr>
+                -->
 				<tbody id="out" style="display:none">
 				<?php  if(empty($set['address_list'])) { ?>
 				<tr>
